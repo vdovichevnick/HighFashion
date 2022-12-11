@@ -1,0 +1,106 @@
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.About h3{
+    border-bottom: dotted;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: start;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 25pt;
+}
+.Pictures{
+    margin:auto;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    overflow:hidden;
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+}
+.AblohSay{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+.video_cont{
+    display:flex;
+    justify-content: center;
+    position:relative;
+    overflow:hidden;
+}
+.video_cont video{
+    width: 80%;
+    height: 80%;
+}
+.video_cont .text_v{
+    opacity:0;
+    position:absolute;
+    bottom:0;
+    height: 40%;
+    width:50%;
+    transform:translate(-30%,-150%);
+    font-size:22px;
+    margin: 0;
+    color:#000;
+}
+.video_cont:hover .text_v {
+    transition: all 1s linear ;
+    opacity:1;
+}
+.Video{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    margin-left: 100px;
+  }
+  
+  .cont->div{
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 12px;
+    display: block;
+    justify-content:center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(28, 224, 51);
+  }
+  
+  footer ul{
+    list-style: none;
+  }
+  @media(max-width: 1000px){
+    .cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+    }
+  }
+  @media(max-width: 500px){
+    .cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4;
+    }
+  }
+  

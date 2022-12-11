@@ -1,0 +1,45 @@
+.Order form{
+    background: rgb(11, 142, 31);
+    background: linear-gradient(180deg, rgb(153, 239, 168) 0%, rgb(59, 176, 81) 100%);
+}
+.Order h3{
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+.Order input[type="text"],input[type="tel"],input[type="email"],input[type="password"] {
+    width: 70%    ;
+    border-radius:2px;
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 13pt; 
+    line-height: 2; 
+    background: inherit;
+}
+.Order label{
+    font-family: 'Quicksand', sans-serif;
+}
+#tel::placeholder{
+    color: rgb(248, 248, 248);
+}
+.CalculatePrice{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.CalculatePrice h3{
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+.startCalc{
+    width: 250px;
+    height: 70px;
+}

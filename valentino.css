@@ -1,0 +1,80 @@
+body {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.About h3{
+    border-bottom: dotted;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: start;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 25pt;
+}
+.Pictures{
+    margin:auto;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.VltnSay{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+.AboutPhoto{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    margin-left: 100px;
+  }
+  
+  .cont->div{
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 12px;
+    display: block;
+    justify-content:center;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(28, 224, 51);
+  }
+  
+  footer ul{
+    list-style: none;
+  }
+  @media(max-width: 1000px){
+    .cont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+    }
+  }
+  @media(max-width: 500px){
+    .cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4;
+    }
+  }
+  

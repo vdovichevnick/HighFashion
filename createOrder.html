@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="createOrderstyling.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="fav.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+</head>
+
+    <title>
+        Order
+    </title>
+
+<body>
+    <div class="Order" id="order">
+        <h3>Заказать дизанерскую одежду из Европы</h3>
+        <form method="get">
+            <fieldset>
+                  <legend>Информация о заказе:</legend>
+                <label for="fname">Имя:</label>
+                <input type="text" id="fname" name="fname" placeholder="Вирджил"><br><br>
+
+
+                <label for="lname">Фамилия:</label>
+                <input type="text" id="lname" name="lname" placeholder="Абло"><br><br>
+
+
+                <label for="tel">Телефон:</label>
+                <input type="tel" id="tel" name="tel" placeholder="89107954949" pattern="[0-9]{11}"required><br><br>
+
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="virgilablo@gmail.com"><br><br>
+
+
+                <label for="userPassword">Пароль:</label>
+                <input type="password" id="userPassword" name="userPassword"><br><br>
+                <label for="clothing">Выберите бренд</label>
+                  <select name="clothing" id="clothing" multiple size="3" required>
+                      <option value="">-Не выбрано-</option>
+                      <option value="OffWhite">OFF-White T-shirt</option>
+                      <option value="TomFord">Tom Ford Jacket</option>
+                      <option value="Stoneisland">Stone Island Sweatshirt</option>
+
+                  </select><br><br>
+
+
+                  <label for="size_model">Выберите размер</label>
+                  <select name="Size" id="size_model" required>
+                      <option value="">-Не выбрано-</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+          <option value="L">L</option>
+                  </select><br><br>
+
+
+                <label for="dateofdelivery" >Дата доставки:</label>
+                <input type="date" id="dateofdelivery" name="dateofdelivery" max="2023-12-31" min="2022-10-20" ><br><br>
+
+
+
+                <label for="file">Фотография желаемого предмета</label>
+               <input type="file" id="file" name="file" ><br><br>
+
+
+        
+        <input type="radio" id="contactChoice" name="contact" >
+                   <label for="contactChoice">Подарочная упаковка</label><br><br>
+
+
+                   <label for="subscribeNews">Вы согласны получать рекламные предложния?</label>
+                   <input type="checkbox" id="subscribeNews"      name="gift"  checked><br><br>
+
+                
+                <label for="Button">Сравнить цены на сайте ЦУМ</label>
+                   <input type="button" id="Button" name="contact" value="Найти" onClick='location.href="https://www.tsum.ru"'><br><br>
+
+      <label for="comment">Отзыв о сайте</label>
+      <textarea id="comment" name="comment" rows="3" cols="35" minlength="10" maxlength="250" placeholder="Быстрая доставка" required></textarea><br><br>
+
+      <input type="submit" value="Подтвердить">		
+            </fieldset>
+        </form>
+    </div>
+    <div class="CalculatePrice">
+        <h3>Калькулятор стоимости заказа</h3>
+        <button class="startCalc">Начать</button>
+    </div>
+    <script src="calculatePrice.js"></script>
+</body>
+
+</html>
